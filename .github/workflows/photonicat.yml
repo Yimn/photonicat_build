@@ -3,7 +3,7 @@ name: photonicat-build
 on:
   workflow_dispatch:
   schedule:
-      - cron: '0 0 15 * *'
+      - cron: '0 0 12 * *'
     
 
 jobs:
