@@ -21,8 +21,8 @@ jobs:
         run: |
           sudo -E timedatectl set-timezone Asia/Shanghai
           echo "TAG_NAME=v$(date +'%y.%m')" >> $GITHUB_ENV
-          git config --global yimnlu@qq.com "github-actions@github.com"
-          git config --global yimnlu "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
           
       - name: delete tag
         uses: dev-drprasad/delete-tag-and-release@v1.0
