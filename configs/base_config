@@ -1893,7 +1893,7 @@ CONFIG_PACKAGE_ath11k-firmware-wcn6855=y
 # CONFIG_PACKAGE_brcmfmac-firmware-4366c0-pcie-k3 is not set
 # CONFIG_PACKAGE_brcmfmac-firmware-43752-pcie is not set
 # CONFIG_PACKAGE_brcmfmac-firmware-43752-sdio is not set
-# CONFIG_PACKAGE_brcmfmac-firmware-usb is not set
+CONFIG_PACKAGE_brcmfmac-firmware-usb=y
 # CONFIG_PACKAGE_brcmfmac-nvram-43430-sdio is not set
 # CONFIG_PACKAGE_brcmfmac-nvram-43455-sdio is not set
 # CONFIG_PACKAGE_brcmfmac-nvram-43456-sdio is not set
@@ -1933,7 +1933,7 @@ CONFIG_PACKAGE_ath11k-firmware-wcn6855=y
 # CONFIG_PACKAGE_cypress-firmware-43570-pcie is not set
 # CONFIG_PACKAGE_cypress-firmware-4373-pcie is not set
 # CONFIG_PACKAGE_cypress-firmware-4373-sdio is not set
-# CONFIG_PACKAGE_cypress-firmware-4373-usb is not set
+CONFIG_PACKAGE_cypress-firmware-4373-usb=y
 # CONFIG_PACKAGE_cypress-firmware-54591-pcie is not set
 # CONFIG_PACKAGE_cypress-firmware-54591-sdio is not set
 # CONFIG_PACKAGE_cypress-firmware-55560-pcie is not set
@@ -2820,7 +2820,20 @@ CONFIG_PACKAGE_kmod-thermal=y
 #
 # Sound Support
 #
-# CONFIG_PACKAGE_kmod-sound-core is not set
+CONFIG_PACKAGE_kmod-sound-core=y
+# CONFIG_PACKAGE_kmod-ac97 is not set
+# CONFIG_PACKAGE_kmod-sound-dummy is not set
+# CONFIG_PACKAGE_kmod-sound-ens1371 is not set
+# CONFIG_PACKAGE_kmod-sound-hda-core is not set
+# CONFIG_PACKAGE_kmod-sound-i8x0 is not set
+# CONFIG_PACKAGE_kmod-sound-mpu401 is not set
+# CONFIG_PACKAGE_kmod-sound-seq is not set
+# CONFIG_PACKAGE_kmod-sound-soc-ac97 is not set
+# CONFIG_PACKAGE_kmod-sound-soc-core is not set
+# CONFIG_PACKAGE_kmod-sound-soc-spdif is not set
+# CONFIG_PACKAGE_kmod-sound-soc-wm8960 is not set
+# CONFIG_PACKAGE_kmod-sound-via82xx is not set
+CONFIG_PACKAGE_kmod-usb-audio=y
 # end of Sound Support
 
 #
@@ -2833,9 +2846,11 @@ CONFIG_PACKAGE_kmod-thermal=y
 # CONFIG_PACKAGE_kmod-usb-cdns3 is not set
 # CONFIG_PACKAGE_kmod-usb-cm109 is not set
 CONFIG_PACKAGE_kmod-usb-core=y
-# CONFIG_PACKAGE_kmod-usb-dwc2 is not set
+CONFIG_PACKAGE_kmod-usb-dwc2=y
 # CONFIG_PACKAGE_kmod-usb-dwc2-pci is not set
-# CONFIG_PACKAGE_kmod-usb-dwc3 is not set
+CONFIG_PACKAGE_kmod-usb-dwc3=y
+CONFIG_PACKAGE_kmod-usb-ehci=y
+CONFIG_PACKAGE_kmod-usb-gadget=y
 # CONFIG_PACKAGE_kmod-usb-gadget-cdc-composite is not set
 # CONFIG_PACKAGE_kmod-usb-gadget-ehci-debug is not set
 # CONFIG_PACKAGE_kmod-usb-gadget-eth is not set
@@ -2843,50 +2858,48 @@ CONFIG_PACKAGE_kmod-usb-core=y
 # CONFIG_PACKAGE_kmod-usb-gadget-mass-storage is not set
 # CONFIG_PACKAGE_kmod-usb-gadget-ncm is not set
 # CONFIG_PACKAGE_kmod-usb-gadget-serial is not set
-# CONFIG_PACKAGE_kmod-usb-hid is not set
+CONFIG_PACKAGE_kmod-usb-hid=y
 # CONFIG_PACKAGE_kmod-usb-hid-cp2112 is not set
 # CONFIG_PACKAGE_kmod-usb-hid-mcp2221 is not set
 # CONFIG_PACKAGE_kmod-usb-ledtrig-usbport is not set
 CONFIG_PACKAGE_kmod-usb-net=y
-# CONFIG_PACKAGE_kmod-usb-net-aqc111 is not set
-# CONFIG_PACKAGE_kmod-usb-net-asix is not set
-# CONFIG_PACKAGE_kmod-usb-net-asix-ax88179 is not set
-# CONFIG_PACKAGE_kmod-usb-net-cdc-eem is not set
+CONFIG_PACKAGE_kmod-usb-net-aqc111=y
+CONFIG_PACKAGE_kmod-usb-net-asix=y
+CONFIG_PACKAGE_kmod-usb-net-asix-ax88179=y
+CONFIG_PACKAGE_kmod-usb-net-cdc-eem=y
 CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
 CONFIG_PACKAGE_kmod-usb-net-cdc-mbim=y
 CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
-# CONFIG_PACKAGE_kmod-usb-net-cdc-subset is not set
-# CONFIG_PACKAGE_kmod-usb-net-dm9601-ether is not set
+CONFIG_PACKAGE_kmod-usb-net-cdc-subset=y
+CONFIG_PACKAGE_kmod-usb-net-dm9601-ether=y
 # CONFIG_PACKAGE_kmod-usb-net-hso is not set
-# CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm is not set
+CONFIG_PACKAGE_kmod-usb-net-huawei-cdc-ncm=y
 # CONFIG_PACKAGE_kmod-usb-net-ipheth is not set
 # CONFIG_PACKAGE_kmod-usb-net-kalmia is not set
 # CONFIG_PACKAGE_kmod-usb-net-kaweth is not set
 # CONFIG_PACKAGE_kmod-usb-net-lan78xx is not set
 # CONFIG_PACKAGE_kmod-usb-net-mcs7830 is not set
 # CONFIG_PACKAGE_kmod-usb-net-pegasus is not set
-# CONFIG_PACKAGE_kmod-usb-net-pl is not set
+CONFIG_PACKAGE_kmod-usb-net-pl=y
 CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
-# CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-fibocom is not set
-# CONFIG_PACKAGE_kmod-usb-net-qmi-wwan-quectel is not set
-# CONFIG_PACKAGE_kmod-usb-net-rndis is not set
-# CONFIG_PACKAGE_kmod-usb-net-rtl8150 is not set
-# CONFIG_PACKAGE_kmod-usb-net-rtl8152 is not set
+CONFIG_PACKAGE_kmod-usb-net-rndis=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
 # CONFIG_PACKAGE_kmod-usb-net-rtl8152-vendor is not set
-# CONFIG_PACKAGE_kmod-usb-net-sierrawireless is not set
+CONFIG_PACKAGE_kmod-usb-net-sierrawireless=y
 # CONFIG_PACKAGE_kmod-usb-net-smsc75xx is not set
-# CONFIG_PACKAGE_kmod-usb-net-smsc95xx is not set
-# CONFIG_PACKAGE_kmod-usb-net-sr9700 is not set
+CONFIG_PACKAGE_kmod-usb-net-smsc95xx=y
+CONFIG_PACKAGE_kmod-usb-net-sr9700=y
 # CONFIG_PACKAGE_kmod-usb-net2280 is not set
 # CONFIG_PACKAGE_kmod-usb-ohci is not set
 # CONFIG_PACKAGE_kmod-usb-ohci-pci is not set
-# CONFIG_PACKAGE_kmod-usb-printer is not set
+CONFIG_PACKAGE_kmod-usb-printer=m
+CONFIG_PACKAGE_kmod-usb-roles=y
 CONFIG_PACKAGE_kmod-usb-serial=y
 # CONFIG_PACKAGE_kmod-usb-serial-ark3116 is not set
 # CONFIG_PACKAGE_kmod-usb-serial-belkin is not set
-# CONFIG_PACKAGE_kmod-usb-serial-ch341 is not set
-# CONFIG_PACKAGE_kmod-usb-serial-ch348 is not set
-# CONFIG_PACKAGE_kmod-usb-serial-cp210x is not set
+CONFIG_PACKAGE_kmod-usb-serial-ch341=y
+CONFIG_PACKAGE_kmod-usb-serial-cp210x=y
 # CONFIG_PACKAGE_kmod-usb-serial-cypress-m8 is not set
 # CONFIG_PACKAGE_kmod-usb-serial-dmx_usb_module is not set
 # CONFIG_PACKAGE_kmod-usb-serial-edgeport is not set
@@ -2899,9 +2912,9 @@ CONFIG_PACKAGE_kmod-usb-serial=y
 # CONFIG_PACKAGE_kmod-usb-serial-mos7840 is not set
 CONFIG_PACKAGE_kmod-usb-serial-option=y
 # CONFIG_PACKAGE_kmod-usb-serial-oti6858 is not set
-# CONFIG_PACKAGE_kmod-usb-serial-pl2303 is not set
-# CONFIG_PACKAGE_kmod-usb-serial-qualcomm is not set
-# CONFIG_PACKAGE_kmod-usb-serial-sierrawireless is not set
+CONFIG_PACKAGE_kmod-usb-serial-pl2303=y
+CONFIG_PACKAGE_kmod-usb-serial-qualcomm=y
+CONFIG_PACKAGE_kmod-usb-serial-sierrawireless=y
 # CONFIG_PACKAGE_kmod-usb-serial-simple is not set
 # CONFIG_PACKAGE_kmod-usb-serial-ti-usb is not set
 # CONFIG_PACKAGE_kmod-usb-serial-visor is not set
@@ -2909,17 +2922,20 @@ CONFIG_PACKAGE_kmod-usb-serial-wwan=y
 # CONFIG_PACKAGE_kmod-usb-serial-xr_usb_serial_common is not set
 CONFIG_PACKAGE_kmod-usb-storage=y
 CONFIG_PACKAGE_kmod-usb-storage-extras=y
-CONFIG_PACKAGE_kmod-usb-storage-uas=y
+# CONFIG_PACKAGE_kmod-usb-storage-uas is not set
+# CONFIG_PACKAGE_kmod-usb-test is not set
 # CONFIG_PACKAGE_kmod-usb-uhci is not set
 CONFIG_PACKAGE_kmod-usb-wdm=y
+CONFIG_PACKAGE_kmod-usb-xhci-hcd=y
 # CONFIG_PACKAGE_kmod-usb-yealink is not set
-# CONFIG_PACKAGE_kmod-usb2 is not set
+CONFIG_PACKAGE_kmod-usb2=y
 # CONFIG_PACKAGE_kmod-usb2-pci is not set
-# CONFIG_PACKAGE_kmod-usb3 is not set
+CONFIG_PACKAGE_kmod-usb3=y
 # CONFIG_PACKAGE_kmod-usbip is not set
 # CONFIG_PACKAGE_kmod-usbip-client is not set
 # CONFIG_PACKAGE_kmod-usbip-server is not set
 # CONFIG_PACKAGE_kmod-usbmon is not set
+# CONFIG_PACKAGE_kmod-xr-usb-serial is not set
 # end of USB Support
 
 #
@@ -7914,7 +7930,7 @@ CONFIG_PACKAGE_ucode-mod-lua=y
 # CONFIG_PACKAGE_uledd is not set
 # CONFIG_PACKAGE_unix2dos is not set
 # CONFIG_PACKAGE_unshare is not set
-# CONFIG_PACKAGE_usb-modeswitch is not set
+CONFIG_PACKAGE_usb-modeswitch=y
 # CONFIG_PACKAGE_usbgadget is not set
 # CONFIG_PACKAGE_usbgadget-acm is not set
 # CONFIG_PACKAGE_usbgadget-ncm is not set
